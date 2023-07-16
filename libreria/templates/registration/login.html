@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion | Home</title>
+</head>
+<body>
+    <h3>Inicio de sesion requerido</h3>
+    <form method="post">
+        {% csrf_token %}
+        <label for="usuario">
+            <h4>Usuario</h4>
+            <input type="text" name="username">
+        </label>
+        <label for="pass">
+            <h4>Contraseña</h4>
+            <input type="password" name="password">
+        </label>
+        <br>
+        <br>
+        <button type="submit">Inciar Sesion</button>|
+        <button><a href="{% url 'registro' %}">Registrarse</a></button>
+    </form>
+</body>
+</html>

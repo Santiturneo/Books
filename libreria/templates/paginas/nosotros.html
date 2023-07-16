@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block titulo %} Nosotros {% endblock %}
+
+
+{% block contenido %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Acerca de</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+  color: #333;
+}
+
+p {
+  line-height: 1.5;
+  color: #666;
+}
+
+ </style>
+</head>
+<body>
+  <h1>Acerca de esta página web</h1>
+  <p>¡Hola! Mi nombre es Santiago Torres y quiero compartir contigo la historia detrás de esta página web.</p>
+  <h2>Contenido</h2>
+  <p>Esta web se desarrolla con el framework django, en la app encontraran principalmente el formulario de login y registro despues la barra de navegacion la cual contiene el Home, Books, About y el Logout, tiene el 'home' con la entrada de bienvenida, los books en donde se podra agregar un libro con su 'id', 'titulo', 'imagen', 'descripcion' y 'acciones' en las cuales nos permite editar y borrar cualquier libro que haya sido agregado, si probamos el logout veremos que no redirecciona a iniciar sesion de nuevo si no tienes cuenta puedes registrarte con el boton que tiene al lado de iniciar sesion, toda esta infomacion de registro y agregado de libros se almacena en la base de datos con mysql. 
+  </p>
+  <h2>Agradecimientos</h2>
+  <p>Quiero expresar mi agradecimiento a los recursos que me han aportado los profesores durante el curso de python para la creacion de esta página web. Sus contribuciones y conocimientos han sido invaluables en la creación de este recurso. </p>
+  <p>¡Gracias por visitar y espero que disfrutes de tu tiempo aquí!</p>
+  <footer>
+    <p>&copy; 2023 Santiago Torres</p>
+  </footer>
+</body>
+</html>
+{% endblock %} 
